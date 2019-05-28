@@ -1,0 +1,30 @@
+// _navbar
+
+// a navigation bar can be used to get to other pages easily
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: $foreground;
+  .el {
+    display: block;
+    color: $text-color;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.25s;
+    &:hover:not(.active) {
+      background: $fore-accent;
+    }
+  }
+  .active {
+    background: $fore-accent;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .navbar.el, .navbar.right, .navbar.left {
+    float: none;
+  }
+}

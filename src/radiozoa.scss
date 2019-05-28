@@ -1,0 +1,35 @@
+// radiozoa
+
+// a framework that makes customizing websites easy
+// customize by changing variables here
+// code in packages can be changed for more complex customizing
+
+
+// style
+
+// font
+$font: normal normal bold 1em Arial;
+
+// colors
+$background: #083540;
+$back-accent: #006269;
+$foreground: #59BCD4;
+$fore-accent: #C4FFE5;
+$text-color: #CF1347;
+
+// numbers
+$b-radius: 10px;
+
+// scss links
+@import "normalize.css"; // resets css
+
+// core library
+@import "core/_base.scss"; // base
+@import "core/_utils.scss"; // utilities
+@import "core/_grid.scss"; // grid system
+
+
+// modules
+@import "mods/_container.scss"; // containers
+@import "mods/_navbar.scss"; // navigation bar
+@import "mods/_buttons.scss"; // buttons

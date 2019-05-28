@@ -1,0 +1,24 @@
+// _base
+
+// defines global behaviors
+
+body {
+  background: $background;
+  color: $text-color;
+  margin: 0;
+  font: $font;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol{
+  text-align: left;
+}
+
+img {
+  min-width: 100%;
+  height: auto;
+}

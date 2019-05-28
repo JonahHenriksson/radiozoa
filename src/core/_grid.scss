@@ -1,0 +1,25 @@
+// _grid
+
+[class*="col-"], [class*="offset-"] {
+  flex: 100%;
+}
+
+@media screen and (min-width: 575px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  @for $i from 1 through 12 {
+    .col-#{$i}, .offset-#{$i} {
+      flex: ($i/12)*10;
+    }
+  }
+}
+
+[class*="col-"] {
+  padding: 15px;
+  margin: 10px;
+  background: $foreground;
+  border-radius: $b-radius;
+}

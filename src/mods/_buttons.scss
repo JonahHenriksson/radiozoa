@@ -1,0 +1,12 @@
+// _buttons
+
+.but {
+  border-radius: $b-radius;
+  padding: 14px 16px;
+  text-align: center;
+  transition: 0.25s;
+  background: $foreground;
+  &:hover {
+    background: $fore-accent;
+  }
+}
